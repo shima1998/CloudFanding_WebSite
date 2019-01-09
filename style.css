@@ -1,1 +1,14 @@
 @charset "UTF-8";
+
+.site-header{
+    height:77px;
+    padding: 30px 20px;
+    background-color:#cccccc;
+    position: fixed;
+    justify-content: space-between;
+    width: 100%;
+}
+
+div#header{
+    
+}
