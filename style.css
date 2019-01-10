@@ -2,13 +2,20 @@
 
 .site-header{
     height:77px;
-    padding: 30px 20px;
     background-color:#cccccc;
-    position: fixed;
+    display:flex;/*直下の要素が並列になる記述*/
+    padding: 30px 20px;/*大きさの指定　詳しくはパディングで検索*/
+    position: fixed;/*メニューバーを固定する記述*/
     justify-content: space-between;
     width: 100%;
 }
 
-div#header{
+.main_menu{
+    display:flex;
+}
+
+.container1{
+    display:block;
+    width: 150px;
     
 }
