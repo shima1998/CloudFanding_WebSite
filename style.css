@@ -1,5 +1,5 @@
 @charset "UTF-8";
-
+/*元からあったタグ*/
 header{
     background: #cccccc;
     display: flex;
@@ -17,11 +17,65 @@ body{
 }
 
 
-
 a{
     text-decoration: none;
 }
 
+ol{
+    font-size: 0.7cm;
+}
+
+/*子孫セレクタ*/
+
+/*クラスセレクタ*/
+
+p.center{
+    text-align: center
+}
+
+div.inline{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p.preview_image{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/*画像関連*/
+.half_image p{
+    width: 50%;
+    height: 50%;
+}
+
+.quarter_image {
+    width: 20%;
+    height: 20%;
+}
+
+.image_left{
+    float: left;
+    margin: 0px 25px 0px 0px;
+}
+
+.image_right{
+    float: right;
+    margin: 0px 0px 0px 50px;
+}
+
+.image_bottom{
+    text-align: bottom;
+}
+
+.image_center{
+    text-align: center;
+}
+
+/*その他*/
 .main{
     margin: 100px 0 0 0;
 }
@@ -75,33 +129,7 @@ a{
     padding: 0;
 }
 
-.half_image *{
-    width: 50%;
-    height: 50%;
-}
 
-.quarter_image *{
-    width: 25%;
-    height: 25%;
-}
-
-.image_left{
-    float: left;
-    margin: 0px 25px 0px 0px;
-}
-
-.image_right{
-    float: right;
-    margin: 0px 0px 0px 50px;
-}
-
-.image_bottom{
-    text-align: bottom;
-}
-
-.image_center{
-    text-align: center;
-}
 
 .bold{
     font-weight: bold;
@@ -112,4 +140,11 @@ a{
     width: max-content;
     padding: 0px;
     vertical-align:top; /*縦方向の揃え位置を指定*/
+}
+
+.side_by_side .quarter_image p{
+    display:inline-block;
+    width: max-content;
+    padding: 0px;
+    vertical-align:top;
 }
