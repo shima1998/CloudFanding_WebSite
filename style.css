@@ -133,12 +133,27 @@ p.preview_image{
 }
 
 .site_header{
-    background: #cccccc;
+    background: whitesmoke;
     display: flex;
     padding: 30px 20px;
     position: fixed;
     justify-content: space-between;
     width: 100%;
+    border-left: double 7px #4ec4d3;/*左線*/    
+}
+
+.box3{
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    color: #474747;
+    background: whitesmoke;/*背景色*/
+    border-left: double 7px #4ec4d3;/*左線*/
+    border-right: double 7px #4ec4d3;/*右線*/
+}
+
+.box3 p {
+    margin: 0; 
+    padding: 0;
 }
 
 .box1 {
@@ -180,8 +195,6 @@ p.preview_image{
     margin: 0; 
     padding: 0;
 }
-
-
 
 .bold{
     font-weight: bold;
