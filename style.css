@@ -12,8 +12,8 @@ header{
 }
 
 body{
-    font-family: "小塚ゴシックProH", "MS Pゴシック";
-    background-color: white;
+    font-family: "小塚ゴシックProH", "MS Pゴシック", "ヒラギノ角ゴ ProN W3";
+    background-color: #ffffff;
 }
 
 div{
@@ -31,9 +31,7 @@ ul{
     list-style: none;
 }
 
-ol{
-    font-size: 0.5cm;
-}
+
 
 /*リンク*/
 #About {
@@ -55,6 +53,18 @@ ol{
 /*子孫セレクタ*/
 
 /*クラスセレクタ*/
+
+div.margin_top{
+    margin-top: 70px;
+}
+
+p.block_center{
+    width: 80%;
+    margin: 0 auto;
+    color: #555555;
+    font-weight: bold;
+    text-align: left;
+}
 
 p.center{
     text-align: center;
@@ -78,7 +88,7 @@ p.preview_image{
 }
 
 /*画像関連*/
-.half_image p{
+.half_image{
     width: 50%;
     height: 50%;
 }
@@ -113,6 +123,10 @@ p.preview_image{
 }
 
 /*文章関連*/
+.under {
+    background: linear-gradient(transparent 50%, yellow 50%);
+    }
+
 .list_flex{
     display: flex;
 }
@@ -129,29 +143,7 @@ p.preview_image{
     color: red;
 }
 
-/*その他*/
-.inner {
-    position: absolute;
-    top: 0; 
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.main{
-    margin: 70px 0 0 0;
-}
-
-.site_header{
-    background: whitesmoke;
-    display: flex;
-    padding: 30px 20px;
-    position: fixed;
-    justify-content: space-between;
-    width: 100%;
-    border-left: double 7px #4ec4d3;/*左線*/    
-}
-
+/*box系*/
 .box3{
     padding: 0.5em 1em;
     margin: 2em 0;
@@ -206,8 +198,65 @@ p.preview_image{
     padding: 0;
 }
 
-.bold{
-    font-weight: bold;
+.box19 {
+    position: relative;
+    padding:0.25em 1em;
+}
+.box19:before,.box19:after{ 
+    content:'';
+    width: 20px;
+    height: 30px;
+    position: absolute;
+    display: inline-block;
+}
+.box19:before{
+    border-left: solid 1px #5767bf;
+    border-top: solid 1px #5767bf;
+    top:0;
+    left: 0;
+}
+.box19:after{
+    border-right: solid 1px #5767bf;
+    border-bottom: solid 1px #5767bf;
+    bottom:0;
+    right: 0;
+}
+.box19 p {
+    margin: 0; 
+    padding: 0;
+}
+
+/*その他*/
+.inner {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.main{
+    margin: 70px 0 0 0;
+}
+
+.site_header{
+    background: whitesmoke;
+    display: flex;
+    padding: 30px 20px;
+    position: fixed;
+    justify-content: space-between;
+    width: 100%;
+    border-left: double 7px #4ec4d3;/*左線*/    
+}
+
+
+
+.size_50{
+    font-size: 50px;
+}
+
+.size_20{
+    font-size: 20px;
 }
 
 .side_by_side p{
