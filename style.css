@@ -58,6 +58,10 @@ div.margin_top{
     margin-top: 70px;
 }
 
+div.margin_half{
+    margin-top: 35px;
+}
+
 p.block_center{
     width: 80%;
     margin: 0 auto;
@@ -252,7 +256,7 @@ p.preview_image{
 
 
 .size_50{
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .size_20{
