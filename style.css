@@ -25,11 +25,32 @@ ol{
     font-size: 0.7cm;
 }
 
+/*リンク*/
+#About {
+    margin-top: -70px; /* 固定ナビの高さ分のネガティブマージン */
+    padding-top: 75px; /* 打ち消し用のパディング */
+    }
+
+#Preview {
+    margin-top: -70px; /* 固定ナビの高さ分のネガティブマージン */
+    padding-top: 75px; /* 打ち消し用のパディング */
+    }
+
+#money {
+    margin-top: -70px; /* 固定ナビの高さ分のネガティブマージン */
+    padding-top: 75px; /* 打ち消し用のパディング */
+    }
+
+
 /*子孫セレクタ*/
 
 /*クラスセレクタ*/
 
 p.center{
+    text-align: center
+}
+
+div.center{
     text-align: center
 }
 
@@ -53,10 +74,16 @@ p.preview_image{
 }
 
 .quarter_image {
-    width: 20%;
-    height: 20%;
+    width: 25%;
+    height: 25%;
 }
 
+.image_30{
+    width: 30%;
+    height: 30%;
+}
+
+/*
 .image_left{
     float: left;
     margin: 0px 25px 0px 0px;
@@ -65,7 +92,7 @@ p.preview_image{
 .image_right{
     float: right;
     margin: 0px 0px 0px 50px;
-}
+}*/
 
 .image_bottom{
     text-align: bottom;
@@ -75,15 +102,40 @@ p.preview_image{
     text-align: center;
 }
 
-/*その他*/
-.main{
-    margin: 100px 0 0 0;
+/*文章関連*/
+.list_flex{
+    display: flex;
 }
 
-.site-header{
-    background: #fff;
+.list_header_margin{
+    margin-left: 40px;
+    margin-right: auto;
+}
+
+
+
+/*色*/
+.color_red{
+    color: red;
+}
+
+/*その他*/
+.inner {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.main{
+    margin: 70px 0 0 0;
+}
+
+.site_header{
+    background: #cccccc;
     display: flex;
-    padding: 60px 20px;
+    padding: 30px 20px;
     position: fixed;
     justify-content: space-between;
     width: 100%;
