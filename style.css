@@ -97,6 +97,16 @@ figure.left{
     padding-right: 20px;
 }
 
+.image_90{
+    width: 90%;
+    height: 90%;
+}
+
+.image_80{
+    width: 80%;
+    height: 80%;
+}
+
 .image_top{
     vertical-align: top;
     margin: 0 0 0px 70px;
@@ -286,7 +296,7 @@ figure.left{
 }
 
 .main{
-    margin: 45px 0 0 0;
+    margin: 80px 0 0 0;
 }
 
 .site_header{
